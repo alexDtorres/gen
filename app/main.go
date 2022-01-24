@@ -2,10 +2,11 @@ package main
 
 import (
 	"log"
-	"workshop/internal/mendix/gen"
+
+	"github.com/alexDtorres/gen"
 )
 
-// gen app ?name --basic
+// app gen ?name --basic
 func main() {
 	pkg := install()
 	Apply := pkg.Apply

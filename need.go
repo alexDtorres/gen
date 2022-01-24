@@ -41,6 +41,6 @@ func (n Need) Check() {
 
 		// abstract
 		proc.Printf(form, N, n.N)
-		proc.Fatalln("usage:", "gen", "app", "<name>")
+		proc.Fatalln("usage:", "app", "gen", "<name>")
 	}
 }
