@@ -2,7 +2,7 @@ package main
 
 import "github.com/alexDtorres/gen"
 
-// gen app ?name --basic
+// app gen ?name --basic
 func main() {
 	pkg := gen.Install()
 	Apply := pkg.Apply
