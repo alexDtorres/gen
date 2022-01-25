@@ -1,0 +1,8 @@
+# hello world
+go run hello.go
+stderr 'hello world'
+! stdout .
+
+-- hello.go --
+package main
+func main() { println("hello") }

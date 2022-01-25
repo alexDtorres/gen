@@ -1,0 +1,8 @@
+# github.com/alexDtorres/gen/app
+$GOPATH/bin/go install github.com/alexDtorres/gen/app@latest
+
+app gen $GOPATH/src/testApp 
+go run $GOPATH/src/testApp
+
+stderr $GOPATH/src/testApp/main.go
+! stdout .
