@@ -1,11 +1,11 @@
-# Some `go` module named `gen` 
+# `gen` Package for `go`
 
 ## Getting Started
 
 `go get -u github.com/alexDtorres/gen`
 
 
-## Example
+### Example
 
 ```
 package main
@@ -17,15 +17,4 @@ func main() {
   pkg.Apply()
 }
 ```
-
-
-## Install the CLI Tool
-
-`go install github.com/alexDtorres/gen/app@latest`
-
-
-## CLI Tool Usage
-
-`app gen <your_app_name>`
-
 

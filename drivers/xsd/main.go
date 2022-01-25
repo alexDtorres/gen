@@ -8,8 +8,8 @@ import (
 
 var CLI struct {
 	Gen struct {
-		Write bool   `short:"w" help:"Write results to file instead of printing to stdout."`
-		Path  string `arg help:"Path to template XML file." type:"path"`
+		Write bool `short:"w" help:"Write results to file instead of printing to stdout."`
+		XmlFile string `arg help:"Path to the template XML file." type:"xml_file"`
 	} `cmd help:"Generate an XSD file from a template XML file."`
 }
 
