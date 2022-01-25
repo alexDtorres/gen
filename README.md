@@ -1,4 +1,6 @@
-# Getting Started
+# Some `go` module named `gen` 
+
+## Getting Started
 
 `go get -u github.com/alexDtorres/gen`
 
@@ -17,12 +19,12 @@ func main() {
 ```
 
 
-## Installation
+## Install the CLI Tool
 
-`go install github.com/alexDtorres/gen/cli/app@latest`
+`go install github.com/alexDtorres/gen/app@latest`
 
 
-## CLI Usage
+## CLI Tool Usage
 
 `app gen <your_app_name>`
 
