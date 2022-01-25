@@ -2,10 +2,10 @@ package gen
 
 import "os/exec"
 
-func ExampleAppGenerator() {
+func ExampleRunner() {
 	rss := [][]string{
-		{"go", "run", "./app", "gen", "testdata"},
-		{"go", "run", "./testdata"},
+		{"go", "run", "drivers/app/main.go", "gen", "testdata"},
+		{"go", "run", "testdata/main.go"},
 	}
 	for _, rs := range rss {
 		cmd := exec.Cmd{Args: rs}
