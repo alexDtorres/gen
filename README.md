@@ -2,7 +2,8 @@
 
 `go get -u github.com/alexDtorres/gen`
 
-### Example
+
+## Example
 
 ```
 package main

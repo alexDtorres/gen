@@ -1,16 +1,12 @@
-# `gen/app`
+# app
 
-## Installation
+` go install github.com/alexDtorres/gen/app@latest `
 
-### via `go get`
+## Example
 
-`go get -u github.com/alexDtorres/gen/app`
+` $ app gen myApp `
 
+` $ go run myApp/main.go `
 
-## Usage
-
-### from `/bin/sh`
-
-`app gen <path>`
-
+` // Output: myApp/main.go `
 
