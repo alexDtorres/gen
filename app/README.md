@@ -2,15 +2,15 @@
 
 ## Installation
 
-### via `go install ...`
+### via `go get`
 
-`go install github.com/alexDtorres/gen/drivers/app@latest`
+`go get -u github.com/alexDtorres/gen/app`
 
 
 ## Usage
 
-### via `/bin/sh`
+### from `/bin/sh`
 
-`app gen <your_pkg>`
+`app gen <path>`
 
 
