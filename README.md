@@ -1,9 +1,6 @@
-# `gen` Package for `go`
-
-## Getting Started
+# gen
 
 `go get -u github.com/alexDtorres/gen`
-
 
 ### Example
 
