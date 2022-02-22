@@ -1,16 +1,27 @@
-package main
+package gen
 
 import "os/exec"
 
 func ExampleRunner() {
-	rss := [][]string{
-		{"go", "run", "drivers/app/main.go", "gen", "testdata"},
-		{"go", "run", "testdata/main.go"},
+  appGenTrialA()
+	// Output: tmp/main.go
+	clean()
+}
+
+func appGenTrialA() {
+  tt := [][]string{
+		{"app", "gen", "tmp"},
+		{"go", "run", "tmp/main.go"},
 	}
-	for _, rs := range rss {
-		cmd := exec.Cmd{Args: rs}
+	for _, t := range tt {
+		cmd := exec.Cmd{Args: t}
 		cmd.Run()
-	}
-	// Output: testdata/main.go
+  }
+}
+
+func clean() {
+  aa := []string{"rm", "-rf", "tmp"}
+  cmd := exec.Cmd{Args: aa}
+  cmd.Run()
 }
 
