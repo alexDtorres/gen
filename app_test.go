@@ -1,6 +1,9 @@
 package gen
 
-import "os/exec"
+import (
+  "os"
+  "os/exec"
+)
 
 func ExampleRunner() {
   appGenTrialA()
@@ -15,12 +18,15 @@ func appGenTrialA() {
 	}
 	for _, t := range tt {
 		cmd := exec.Cmd{Args: t}
+		cmd.Stdin = os.Stdin
+		cmd.Stderr = os.Stderr
+		cmd.Stdout = os.Stdout
 		cmd.Run()
   }
 }
 
 func clean() {
-  aa := []string{"rm", "-rf", "tmp"}
+  aa := []string{"trash", "tmp"}
   cmd := exec.Cmd{Args: aa}
   cmd.Run()
 }

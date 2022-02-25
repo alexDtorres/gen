@@ -44,3 +44,4 @@ func (n Need) Check() {
 		proc.Fatalln("usage:", "app", "gen", "<name>")
 	}
 }
+
