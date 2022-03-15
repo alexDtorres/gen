@@ -5,16 +5,11 @@ import "github.com/alexDtorres/gen"
 // app gen <your_app>
 func main() {
 	pkg := gen.Install()
-	Apply := pkg.Apply
-	Eval := pkg.Eval
 	pre := pkg.Pre
-	sess := pkg.Sess
 
 	pre.Check()
-
-	name := Eval(sess)
-	if err := Apply(name, sess); err != nil {
-		sess.Fatal(err)
+	if err := pkg.Apply(pkg.Eval()); err != nil {
+		panic(err)
 	}
 }
 
